@@ -1,6 +1,5 @@
 = L'ESN comme tremplin, pas comme destination
 :date: 2026-06-02 09:00
-:networks: x,bluesky
 :status: ready
 :tags: freelance,esn,carriere
 

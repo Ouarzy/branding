@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project context
 
-Pipeline semi-automatisé de publication sur X et BlueSky pour promouvoir le livre **Code Freelance** d'Emilien Pecoul et la formation associée (https://formation.hackyourjob.com/catalogue/devenir-freelance-tech.html).
+Pipeline semi-automatisé de publication sur **BlueSky** pour promouvoir le livre **Code Freelance** d'Emilien Pecoul et la formation associée (https://formation.hackyourjob.com/catalogue/devenir-freelance-tech.html).
 
 **Cible** : développeurs salariés (souvent en ESN) qui ne s'épanouissent pas. Ils n'aiment pas le marketing agressif — le ton doit être authentique, bienveillant, concret.
 
@@ -46,7 +46,6 @@ src/
   parser.py            # parse les .adoc, extrait métadonnées + body → Post dataclass
   cli.py               # CLI Typer : list | publish | generate
   publishers/
-    x.py               # tweepy → X API v2
     bluesky.py         # atproto → AT Protocol BlueSky
   generator/
     claude.py          # Claude API (Opus) → génère des batches de posts en .adoc
@@ -73,13 +72,12 @@ Texte du post (≤280 car. pour X)
 ### Variables d'environnement requises
 
 Voir `.env.example`. En production, stockées dans GitHub Actions Secrets :
-- `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN`, `X_ACCESS_TOKEN_SECRET`
 - `BLUESKY_HANDLE`, `BLUESKY_APP_PASSWORD`
 - `ANTHROPIC_API_KEY`
 
 ## Key decisions & constraints
 
 - **Ton éditorial** : jamais de promesses miraculeuses, pas de "tu vas gagner 10x plus". Montrer la valeur réelle, partager des expériences concrètes.
-- **Limite X** : 280 caractères max par post. Le parser ne tronque pas — c'est à l'utilisateur de respecter la limite lors de la rédaction.
+- **Limite BlueSky** : 300 caractères max par post. Le parser ne tronque pas — c'est à l'utilisateur de respecter la limite lors de la rédaction.
 - **GitHub Actions** publie puis committe le changement de statut (`published`) avec `[skip ci]` pour éviter les boucles.
 - **Génération Claude** : utilise `claude-opus-4-7` pour la qualité éditoriale. Les drafts générés ne sont jamais publiés sans validation manuelle.

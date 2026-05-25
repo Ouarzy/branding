@@ -11,11 +11,6 @@ console = Console()
 CONTENT_DIR = Path(__file__).parent.parent / "content"
 
 
-def _get_parser():
-    from src.parser import load_posts
-    return load_posts
-
-
 @app.command("list")
 def list_posts(
     status: str = typer.Option(None, "--status", "-s", help="Filtrer par statut: draft|ready|published"),
@@ -32,7 +27,6 @@ def list_posts(
     table.add_column("Fichier", style="dim")
     table.add_column("Statut")
     table.add_column("Date")
-    table.add_column("Réseaux")
     table.add_column("Titre")
 
     status_colors = {"draft": "yellow", "ready": "green", "published": "blue"}
@@ -44,7 +38,6 @@ def list_posts(
             post.path.name,
             f"[{color}]{post.status}[/{color}]",
             date_str,
-            ", ".join(post.networks),
             post.title,
         )
 
@@ -57,7 +50,6 @@ def publish_now(
 ):
     """Publie les posts dont la date est échue (status: ready)."""
     from src.parser import load_posts, mark_published
-    from src.publishers.x import publish_to_x
     from src.publishers.bluesky import publish_to_bluesky
 
     posts = load_posts(CONTENT_DIR, status="ready")
@@ -72,28 +64,15 @@ def publish_now(
         console.print(f"[dim]{post.body[:80]}...[/dim]" if len(post.body) > 80 else f"[dim]{post.body}[/dim]")
 
         if dry_run:
-            console.print(f"[yellow][DRY RUN] Serait publié sur : {', '.join(post.networks)}[/yellow]")
+            console.print("[yellow][DRY RUN] Serait publié sur BlueSky[/yellow]")
             continue
 
-        errors = []
-        if "x" in post.networks:
-            try:
-                publish_to_x(post.body)
-                console.print("[green]✓ Publié sur X[/green]")
-            except Exception as e:
-                errors.append(f"X: {e}")
-                console.print(f"[red]✗ Erreur X: {e}[/red]")
-
-        if "bluesky" in post.networks:
-            try:
-                publish_to_bluesky(post.body)
-                console.print("[green]✓ Publié sur BlueSky[/green]")
-            except Exception as e:
-                errors.append(f"BlueSky: {e}")
-                console.print(f"[red]✗ Erreur BlueSky: {e}[/red]")
-
-        if not errors:
+        try:
+            publish_to_bluesky(post.body)
+            console.print("[green]✓ Publié sur BlueSky[/green]")
             mark_published(post)
+        except Exception as e:
+            console.print(f"[red]✗ Erreur BlueSky: {e}[/red]")
 
 
 @app.command("generate")
