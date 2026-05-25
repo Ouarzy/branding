@@ -1,0 +1,14 @@
+= Titre du post
+:date: 2026-01-01
+:networks: x,bluesky
+:status: draft
+:tags: freelance,livre,formation
+
+// status: draft | ready | published
+// networks: x | bluesky | x,bluesky
+
+Texte du post ici. Maximum 280 caractères pour X, 300 pour BlueSky.
+
+// Pour un thread X, séparer chaque tweet par une ligne vide commençant par //---
+//---
+// Suite du thread si nécessaire
