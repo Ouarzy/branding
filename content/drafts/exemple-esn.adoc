@@ -1,10 +1,10 @@
 = L'ESN comme tremplin, pas comme destination
-:date: 2026-06-02 09:00
-:status: ready
+:date: 2026-05-24 09:00
+:status: published
 :tags: freelance,esn,carriere
 
-3 ans en ESN. J'ai appris plein de choses — surtout que je ne voulais pas y passer ma carrière.
+Après avoir bosser pour pas mal d'ESN, j'ai appris plein de choses — surtout que je ne voulais pas y passer ma carrière.
 
-Le passage en freelance, c'est récupérer le contrôle : sur tes missions, tes clients, ton TJM.
+Le passage en freelance m'a permis de récupérer le contrôle : sur mes missions, mes clients, mes TJM.
 
 J'ai écrit un livre là-dessus : Code Freelance. 👇
