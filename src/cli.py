@@ -64,12 +64,22 @@ def publish_now(
         console.print(f"[dim]{post.body[:80]}...[/dim]" if len(post.body) > 80 else f"[dim]{post.body}[/dim]")
 
         if dry_run:
-            console.print("[yellow][DRY RUN] Serait publié sur BlueSky[/yellow]")
+            from src.publishers.bluesky import split_into_parts
+            parts = split_into_parts(post.body)
+            if len(parts) > 1:
+                console.print(f"[yellow][DRY RUN] Thread de {len(parts)} posts sur BlueSky[/yellow]")
+                for i, part in enumerate(parts, 1):
+                    console.print(f"[dim]  [{i}/{len(parts)}] {part[:60]}{'...' if len(part) > 60 else ''}[/dim]")
+            else:
+                console.print("[yellow][DRY RUN] Serait publié sur BlueSky[/yellow]")
             continue
 
         try:
             publish_to_bluesky(post.body)
-            console.print("[green]✓ Publié sur BlueSky[/green]")
+            from src.publishers.bluesky import split_into_parts
+            nb = len(split_into_parts(post.body))
+            label = f"thread de {nb} posts" if nb > 1 else "post"
+            console.print(f"[green]✓ Publié sur BlueSky ({label})[/green]")
             mark_published(post)
         except Exception as e:
             console.print(f"[red]✗ Erreur BlueSky: {e}[/red]")

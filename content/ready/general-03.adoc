@@ -1,0 +1,11 @@
+= Dev en ESN : tu vaux probablement plus que ton salaire
+:date: 2026-06-12 09:00
+:status: ready
+:tags: freelance,dev,IA
+
+Je vois passer pas mal de gens qui disent que bientôt plus personne ne comprendra le code car seul les #IA en écriront, et que franchement c'est pas grave 🤷‍♂️
+C'est vrai après tout qui sait écrire en langage machine ? Ou en binaire ? Personne parce que ce n'est plus utile.
+
+Pourtant je pense que penser cela c'est passer à coté d'un point important: transpilé du code ça peut être fait par une machine sans jamais se tromper. Interpréter un languague humain c'est plus compliqué.
+
+Si la seule source de vérité c'est des specs soumises à inteprétation et des IA qui l'ont codé, on va se retrouver avec des bugs qui ne seront jamais corrigés parce que personne ne comprendra le code. Ce ne sera pas acceptable pour n'importe quel type de logiciel 💡

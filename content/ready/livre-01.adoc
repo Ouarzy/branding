@@ -1,0 +1,9 @@
+= Ce que j'aurais aimé savoir avant de me lancer
+:date: 2026-05-29 09:00
+:status: ready
+:tags: freelance,livre,conseil
+
+Quand je suis passé freelance, j'ai fait beaucoup d'erreurs évitables.
+Trouver ses premiers clients, fixer son TJM, gérer l'administratif...
+
+J'ai écrit Code Freelance pour que tu n'aies pas à les faire aussi. 📕
