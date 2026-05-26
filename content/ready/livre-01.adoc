@@ -1,5 +1,5 @@
 = Ce que j'aurais aimé savoir avant de me lancer
-:date: 2026-05-29 09:00
+:date: 2026-05-29 07:00
 :status: ready
 :tags: freelance,livre,conseil
 

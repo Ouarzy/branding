@@ -1,5 +1,5 @@
 = La question que je pose à tous mes clients
-:date: 2026-06-08 09:00
+:date: 2026-06-08 07:00
 :status: ready
 :tags: freelance,formation,client
 

@@ -1,5 +1,5 @@
 = Freelance ne veut pas dire seul
-:date: 2026-06-11 09:00
+:date: 2026-06-11 07:00
 :status: ready
 :tags: freelance,livre,reseau
 

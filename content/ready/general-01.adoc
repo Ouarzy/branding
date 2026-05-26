@@ -1,5 +1,5 @@
 = Ce que m'a appris ma première année en freelance
-:date: 2026-05-28 09:00
+:date: 2026-05-28 07:00
 :status: ready
 :tags: freelance,experience,retour
 

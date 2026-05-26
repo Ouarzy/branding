@@ -1,5 +1,5 @@
 = Le TJM : le sujet que tout le monde évite
-:date: 2026-06-10 09:00
+:date: 2026-06-10 07:00
 :status: ready
 :tags: freelance,livre,tjm
 

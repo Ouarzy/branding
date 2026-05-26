@@ -1,5 +1,5 @@
 = La question que personne ne pose en ESN
-:date: 2026-06-05 09:00
+:date: 2026-06-05 07:00
 :status: esn
 :tags: freelance,esn,epanouissement
 

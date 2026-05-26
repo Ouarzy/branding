@@ -1,5 +1,5 @@
 = Passer freelance sans sauter dans le vide
-:date: 2026-05-27 09:00
+:date: 2026-05-27 07:00
 :status: ready
 :tags: freelance,formation,transition
 

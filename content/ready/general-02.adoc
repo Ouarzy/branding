@@ -1,5 +1,5 @@
 = Dev en ESN : tu vaux probablement plus que ton salaire
-:date: 2026-06-09 09:00
+:date: 2026-06-09 07:00
 :status: ready
 :tags: freelance,salaire,valeur
 
