@@ -1,6 +1,6 @@
 = La mission qui ne finit jamais
 :date: 2026-05-26 07:00
-:status: ready
+:status: published
 :tags: freelance,esn,carriere
 
 Bosser en ESN, c'est un peu comme courir sur un tapis roulant.
