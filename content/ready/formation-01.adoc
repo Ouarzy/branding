@@ -1,6 +1,6 @@
 = Passer freelance sans sauter dans le vide
 :date: 2026-05-27 07:00
-:status: ready
+:status: published
 :tags: freelance,formation,transition
 
 Le plus dur dans la transition freelance, ce n'est pas les compétences techniques 🤷‍♂️
