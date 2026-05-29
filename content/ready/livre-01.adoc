@@ -1,6 +1,6 @@
 = Ce que j'aurais aimé savoir avant de me lancer
 :date: 2026-05-29 07:00
-:status: ready
+:status: published
 :tags: freelance,livre,conseil
 
 Quand je suis passé freelance, j'ai fait beaucoup d'erreurs évitables.
