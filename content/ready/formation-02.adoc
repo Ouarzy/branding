@@ -1,6 +1,6 @@
 = La question que je pose à tous mes clients
 :date: 2026-06-08 07:00
-:status: ready
+:status: published
 :tags: freelance,formation,client
 
 "Quel problème est-ce que je résous pour toi ?"
