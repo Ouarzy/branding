@@ -1,6 +1,6 @@
 = Dev en ESN : tu vaux probablement plus que ton salaire
 :date: 2026-06-09 07:00
-:status: ready
+:status: published
 :tags: freelance,salaire,valeur
 
 Les ESN facturent leurs clients 600-1200€/jour pour ton profil.
