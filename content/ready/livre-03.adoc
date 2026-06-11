@@ -1,6 +1,6 @@
 = Freelance ne veut pas dire seul
 :date: 2026-06-11 07:00
-:status: ready
+:status: published
 :tags: freelance,livre,reseau
 
 Une idée reçue qui a la vie dure : "En freelance tu es seul." 
