@@ -1,6 +1,6 @@
 = Dev en ESN : tu vaux probablement plus que ton salaire
 :date: 2026-06-12 07:00
-:status: ready
+:status: published
 :tags: freelance,dev,IA
 
 Je vois passer pas mal de gens qui disent que bientôt plus personne ne comprendra le code car seul les #IA en écriront, et que franchement c'est pas grave 🤷‍♂️
